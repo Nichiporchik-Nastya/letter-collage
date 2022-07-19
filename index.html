@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Collage</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <script src="js/fabricmin.js"></script>
+    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.3.1/fabric.min.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">Letter Collage</div>
+            <nav class="menu">
+                <div class="menu__item">
+                    <a href="#" class="menu__link">Как использовать </a>
+                </div>
+            </nav>  
+        </header>
+        <div class="properties">
+            <div class="main-properties">
+                <input class="control control_long" type="text" placeholder="Введите свой текст"></input>
+                <button class="control control_middle control_generate-button">Сгенерировать</button>
+            </div>
+            <div class="buttons">
+                <div class="random-buttons">
+                    <!-- <label class="label">Рандомизировать:</label> -->
+                    <button class="control">Цвет</button>
+                    <button class="control">Форма</button>
+                    <button class="control">Шрифт</button>
+                </div>
+                <button class="control control_middle">Сохранить изображение</button>
+            </div>
+        </div>
+        <div class="canvas-wrapper">
+            <canvas id="canvas" width="1214px" height="400px"></canvas>
+        </div>
+        <div class="properties">
+            <div class="properties__buttons">
+                <div class="dropdown-wrapper closed">
+                    <div class="dropdown">
+                      <div class="control-text">Выберите стиль</div>
+                    <svg class="arrow" width="12" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.57167 0.5H1.40012C0.511212 0.5 0.0641458 1.57301 0.690084 2.20417L4.24622 5.78994C4.63513 6.18209 5.26831 6.18471 5.66045 5.79578L9.27586 2.21001C9.90982 1.58125 9.46456 0.5 8.57167 0.5Z" fill="black"/>
+                  </svg>
+                    </div>
+                        <div class="dropdown__list-wrapper">
+                            <ul class="dropdown__list">
+                            <li class="dropdown__item">
+                                <div class="dropdown__text">С днём рождения</div>
+                                <img class="dropdown__img" src="/img/Rectangle 64.jpg" alt="">
+                            </li>
+                            <li class="dropdown__item">
+                                <div class="dropdown__text">Я люблю тебя</div>
+                                <img class="dropdown__img" src="/img/Rectangle 64.jpg" alt="">
+                            </li>
+                            <li class="dropdown__item">
+                                <div class="dropdown__text">Привет</div>
+                                <img class="dropdown__img" src="/img/Rectangle 64.jpg" alt="">
+                            </li>
+                            <li class="dropdown__item">
+                                <div class="dropdown__text">Холодная мята</div>
+                                <img class="dropdown__img" src="/img/Rectangle 64.jpg" alt="">
+                            </li>
+                            </ul>
+                        </div>
+                </div>
+               
+            </div>
+            <div class="settings">
+                <div class="settings__selection-controls"></div>
+                <div class="settings__color-controls"></div>
+            </div>
+        </div>
+        <footer class="footer">
+           
+            <div class="logo">Letter Collage</div>
+            <p class="footer__copyright">&copy;2022</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html> 

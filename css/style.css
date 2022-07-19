@@ -1,0 +1,188 @@
+:root{
+    --viol: #7E9BF1;
+    --light-viol: #F0F3FD;
+    --radius: 30px;
+}
+a{
+    color: inherit;
+    font-size: 14px;
+}
+.label{
+    font-size: 14px;
+    display: block;
+    padding-bottom: 8px;
+  }
+.control{
+    border: 2px solid #000;
+    border-radius: var(--radius);
+    padding: 7px 40px;
+    height: 40px;
+    background-color: #fff;
+    /* margin-right: 5px; */
+}
+.control_long{
+    width: 600px;
+}
+.control_middle{
+    width: 300px;
+}
+.control_generate-button{
+    color: #fff;
+    background-color: #000;
+}
+.buttons{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+.properties__buttons{
+    position: relative;
+    height: 100%;
+}
+select{
+    -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   cursor: pointer;
+
+} 
+.select-wrapper{
+    position: relative;
+    background: #000;
+    border-radius: var(--radius);
+}
+.select-wrapper::before{
+    content:'\203A';
+    font-size: 24px;
+    position: absolute;
+    transform: rotate(90deg);
+    right: 15px;
+    top: 10px;
+    vertical-align: middle;
+}
+option{
+   height: 100px;
+}
+.container{
+    max-width: 1214px;
+    margin: 0 auto;
+font-size: 16px;
+    font-family: sans-serif;
+}
+.main-properties{
+    padding: 8px 0px 10px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.canvas-wrapper{
+    background-color: var(--light-viol);
+    width: 100%;
+    display: block;
+}
+
+.header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+    padding: 15px 0px;
+}
+.header:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 300px;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 calc(var(--radius)*10) calc(var(--radius)*10);
+    background-color: var(--viol);
+}
+/* .logo::after{
+    content: '';
+    width: 100%;
+    margin-top: -5px;
+    height: 5px;
+    background-color: #ed2147;
+    display: block;
+} */
+
+.logo, p{
+    cursor: default;
+    font-size: 14px;
+}
+
+
+  .control-text{
+  border-bottom: 1px solid #000;
+    padding: 8px 20px;
+  width: 100%;
+    position: absolute;
+    background-color:#fff;
+  }
+  .dropdown{
+  
+  /*   height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  z-index: 50;
+  }
+
+  .arrow{
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    transition: all .15s ease-in;
+  }
+  /* хром, сафари */
+.dropdown__list-wrapper::-webkit-scrollbar { width: 0; }
+/* ie 10+ */
+.dropdown__list-wrapper { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.dropdown__list-wrapper { overflow: -moz-scrollbars-none; }
+
+  .dropdown-wrapper{
+        border: 2px solid #000;
+    border-radius: var(--radius);
+    background-color: #fff;
+        width: 300px;
+   overflow: hidden;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+      transition: all 0.2s ease-in;
+    cursor: pointer;
+
+    
+  }
+  .list-wrapper{
+    overflow: auto;
+    height:300px;
+  }
+  .dropdown__list{
+    margin-top: 40px;
+
+  }
+
+  .dropdown__item{
+    padding: 15px;
+  }
+  .dropdown__item:hover, .dropdown__item:active{
+    background-color: var(--light-viol);
+  }
+  .dropdown__img{
+    padding: 15px 0px;
+    width: 100%;
+  }
+  .closed{
+    height:40px;
+    overflow: hidden;
+  }
+  .control-wrapper:active .arrow{
+    transform: translate(0, 3px);
+  }
